@@ -5,8 +5,10 @@ import {
   useContext,
   useState,
   useCallback,
+  useRef,
   ReactNode,
 } from "react";
+import { createShopifyCart, addLineToShopifyCart } from "@/lib/shopify-client";
 
 export interface CartItem {
   variantId: string;
@@ -28,6 +30,7 @@ interface CartContextValue {
   updateQuantity: (variantId: string, quantity: number) => void;
   itemCount: number;
   subtotal: number;
+  checkoutUrl: string | null;
 }
 
 const CartContext = createContext<CartContextValue | null>(null);
@@ -35,11 +38,17 @@ const CartContext = createContext<CartContextValue | null>(null);
 export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
   const [isOpen, setIsOpen] = useState(false);
+  const [checkoutUrl, setCheckoutUrl] = useState<string | null>(null);
+
+  // Shopify cart id kept in a ref so it's available in async callbacks
+  // without causing re-renders.
+  const shopifyCartId = useRef<string | null>(null);
 
   const openCart = useCallback(() => setIsOpen(true), []);
   const closeCart = useCallback(() => setIsOpen(false), []);
 
   const addItem = useCallback((newItem: Omit<CartItem, "quantity">) => {
+    // 1. Update local UI state immediately (optimistic)
     setItems((prev) => {
       const existing = prev.find((i) => i.variantId === newItem.variantId);
       if (existing) {
@@ -52,6 +61,30 @@ export function CartProvider({ children }: { children: ReactNode }) {
       return [...prev, { ...newItem, quantity: 1 }];
     });
     setIsOpen(true);
+
+    // 2. Sync with Shopify cart in the background
+    const syncWithShopify = async () => {
+      try {
+        if (!shopifyCartId.current) {
+          // First item — create a new Shopify cart
+          const cart = await createShopifyCart(newItem.variantId, 1);
+          shopifyCartId.current = cart.id;
+          setCheckoutUrl(cart.checkoutUrl);
+        } else {
+          // Cart already exists — add the line
+          const cart = await addLineToShopifyCart(
+            shopifyCartId.current,
+            newItem.variantId,
+            1
+          );
+          setCheckoutUrl(cart.checkoutUrl);
+        }
+      } catch {
+        // Shopify sync failed silently — local cart still works;
+        // checkout button will fall back to the shop page.
+      }
+    };
+    syncWithShopify();
   }, []);
 
   const removeItem = useCallback((variantId: string) => {
@@ -91,6 +124,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         updateQuantity,
         itemCount,
         subtotal,
+        checkoutUrl,
       }}
     >
       {children}

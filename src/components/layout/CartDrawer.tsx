@@ -27,6 +27,7 @@ export default function CartDrawer({ lang, dict }: CartDrawerProps) {
     updateQuantity,
     itemCount,
     subtotal,
+    checkoutUrl,
   } = useCart();
 
   const formatPrice = (amount: number, currency = "USD") =>
@@ -179,11 +180,19 @@ export default function CartDrawer({ lang, dict }: CartDrawerProps) {
                 {formatPrice(subtotal)}
               </span>
             </div>
-            <Link href={`/${lang}/tienda`} onClick={closeCart}>
-              <Button variant="primary" size="lg" fullWidth>
-                {dict.shop.checkout}
-              </Button>
-            </Link>
+            {checkoutUrl ? (
+              <a href={checkoutUrl} target="_blank" rel="noopener noreferrer">
+                <Button variant="primary" size="lg" fullWidth>
+                  {dict.shop.checkout}
+                </Button>
+              </a>
+            ) : (
+              <Link href={`/${lang}/tienda`} onClick={closeCart}>
+                <Button variant="primary" size="lg" fullWidth>
+                  {dict.shop.checkout}
+                </Button>
+              </Link>
+            )}
           </div>
         )}
       </div>
