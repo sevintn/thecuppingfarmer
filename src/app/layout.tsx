@@ -17,6 +17,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "The Cupping Farmer",
   description: "Specialty coffee from farm to cup",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
