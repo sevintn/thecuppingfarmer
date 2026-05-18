@@ -3,12 +3,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { hasLocale, getDictionary } from "@/dictionaries";
-import { getProductByHandle, mockProducts } from "@/lib/mock-data";
+import { getProductByHandle as getMockProduct, mockProducts } from "@/lib/mock-data";
+import { getProducts, getProductByHandle as getShopifyProduct, normalizeShopifyProduct } from "@/lib/shopify";
 import AddToCartButton from "@/components/shop/AddToCartButton";
 import Badge from "@/components/ui/Badge";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
+  try {
+    const products = await getProducts(50);
+    if (products.length > 0) {
+      return products.map((p) => ({ handle: p.handle }));
+    }
+  } catch {
+    // fallback to mock handles
+  }
   return mockProducts.map((p) => ({ handle: p.handle }));
 }
 
@@ -18,12 +27,18 @@ export async function generateMetadata({
   params: Promise<{ lang: string; handle: string }>;
 }): Promise<Metadata> {
   const { handle } = await params;
-  const product = getProductByHandle(handle);
+  try {
+    const raw = await getShopifyProduct(handle);
+    if (raw) {
+      const p = normalizeShopifyProduct(raw);
+      return { title: p.title, description: p.description };
+    }
+  } catch {
+    // fallback
+  }
+  const product = getMockProduct(handle);
   if (!product) return {};
-  return {
-    title: product.title,
-    description: product.description,
-  };
+  return { title: product.title, description: product.description };
 }
 
 export default async function ProductPage({
@@ -35,7 +50,16 @@ export default async function ProductPage({
 
   if (!hasLocale(lang)) notFound();
 
-  const product = getProductByHandle(handle);
+  let product;
+  try {
+    const raw = await getShopifyProduct(handle);
+    product = raw ? normalizeShopifyProduct(raw) : null;
+  } catch {
+    product = null;
+  }
+  if (!product) {
+    product = getMockProduct(handle) ?? null;
+  }
   if (!product) notFound();
 
   const dict = await getDictionary(lang);

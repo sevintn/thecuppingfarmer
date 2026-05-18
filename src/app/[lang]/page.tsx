@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "@/dictionaries";
 import { getFeaturedProducts } from "@/lib/mock-data";
+import { getProducts, normalizeShopifyProduct } from "@/lib/shopify";
 import Hero from "@/components/home/Hero";
 import MissionBlock from "@/components/home/MissionBlock";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
@@ -36,7 +37,17 @@ export default async function HomePage({
   if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang);
-  const featuredProducts = getFeaturedProducts();
+
+  let featuredProducts;
+  try {
+    const shopifyProducts = await getProducts(10);
+    const normalized = shopifyProducts.map(normalizeShopifyProduct);
+    const tagged = normalized.filter((p) => p.featured);
+    // If no product is tagged "featured", show the first 3
+    featuredProducts = (tagged.length > 0 ? tagged : normalized).slice(0, 3);
+  } catch {
+    featuredProducts = getFeaturedProducts();
+  }
 
   return (
     <>

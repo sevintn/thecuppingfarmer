@@ -177,6 +177,50 @@ export async function createCart(): Promise<ShopifyCart> {
   return data.cartCreate.cart;
 }
 
+// ─── Normalizer ──────────────────────────────────────────────────────────────
+// Converts a raw ShopifyProduct into the MockProduct-compatible shape that all
+// UI components expect. Product tags in Shopify should use these conventions:
+//   origin:Colombia   process:Natural   roast:Ligero   weight:250g
+//   flavor:Jazmín,Durazno,Miel   featured
+
+import type { MockProduct } from "@/lib/mock-data";
+
+function tagValue(tags: string[], key: string, fallback = "—"): string {
+  const lower = key.toLowerCase();
+  const match = tags.find((t) => t.toLowerCase().startsWith(lower + ":"));
+  return match ? match.slice(key.length + 1).trim() : fallback;
+}
+
+function flavorNotes(tags: string[]): string[] {
+  const match = tags.find(
+    (t) => t.toLowerCase().startsWith("flavor:") || t.toLowerCase().startsWith("notas:")
+  );
+  if (!match) return [];
+  return match.split(":")[1].split(",").map((s) => s.trim()).filter(Boolean);
+}
+
+export function normalizeShopifyProduct(p: ShopifyProduct): MockProduct {
+  const firstVariant = p.variants.edges[0]?.node;
+  return {
+    id: p.id,
+    handle: p.handle,
+    title: p.title,
+    description: p.description,
+    price: parseFloat(p.priceRange.minVariantPrice.amount),
+    currencyCode: p.priceRange.minVariantPrice.currencyCode,
+    image: p.images.edges[0]?.node.url ?? "",
+    tags: p.tags,
+    origin: tagValue(p.tags, "origin"),
+    process: tagValue(p.tags, "process"),
+    roast: tagValue(p.tags, "roast"),
+    weight: tagValue(p.tags, "weight"),
+    flavorNotes: flavorNotes(p.tags),
+    featured: p.tags.map((t) => t.toLowerCase()).includes("featured"),
+    inStock: firstVariant?.availableForSale ?? false,
+    variantId: firstVariant?.id ?? "",
+  };
+}
+
 export async function addToCart(
   cartId: string,
   variantId: string,

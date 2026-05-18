@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { hasLocale, getDictionary } from "@/dictionaries";
 import { mockProducts } from "@/lib/mock-data";
+import { getProducts, normalizeShopifyProduct } from "@/lib/shopify";
 import ProductGrid from "@/components/shop/ProductGrid";
 import type { Metadata } from "next";
 
@@ -28,6 +29,11 @@ export default async function ShopPage({
 
   const dict = await getDictionary(lang);
 
+  const shopifyProducts = await getProducts().catch(() => null);
+  const products = shopifyProducts
+    ? shopifyProducts.map(normalizeShopifyProduct)
+    : mockProducts;
+
   return (
     <div className="min-h-screen bg-brand-cream">
       {/* Hero */}
@@ -45,7 +51,7 @@ export default async function ShopPage({
       {/* Products */}
       <section className="py-14 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ProductGrid products={mockProducts} lang={lang} dict={dict.shop} />
+          <ProductGrid products={products} lang={lang} dict={dict.shop} />
         </div>
       </section>
     </div>
