@@ -189,7 +189,9 @@ export default function ContactPageClient({ lang, dict }: ContactPageClientProps
                 </div>
                 <div className="flex items-start gap-3 text-brand-mid mt-3">
                   <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                  <p className="font-body text-sm">Colombia</p>
+                  <p className="font-body text-sm">
+                    {lang === "es" ? "Hamburgo, Alemania" : "Hamburg, Germany"}
+                  </p>
                 </div>
               </div>
 

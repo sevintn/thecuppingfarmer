@@ -51,8 +51,8 @@ export default function Header({ lang, dict }: HeaderProps) {
             <img
               src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/logo-mark.svg`}
               alt="The Cupping Farmer"
-              width={40}
-              height={40}
+              width={48}
+              height={48}
               className="flex-shrink-0"
             />
             <span className="font-heading font-bold text-brand-dark text-lg leading-tight hidden sm:block">

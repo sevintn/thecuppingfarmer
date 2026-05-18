@@ -66,7 +66,7 @@ export default function Footer({ lang, dict }: FooterProps) {
               alt="The Cupping Farmer"
               width={160}
               height={160}
-              className="invert brightness-90"
+              className="brightness-0 invert"
             />
             <p className="text-brand-beige/70 text-sm font-body leading-relaxed">
               {dict.footer.tagline}

@@ -11,17 +11,17 @@
   "hero": {
     "tagline": "Del campo a tu taza",
     "headline": "Café de especialidad con alma de agricultor",
-    "subheadline": "Cultivamos, procesamos y compartimos el mejor café de origen, con la pasión de quienes conocen cada árbol por nombre.",
+    "subheadline": "Criado entre cafetales en Copán Ruinas (Honduras) y hoy desde Hamburgo, seleccionamos los mejores microlotes de especialidad del mundo.",
     "cta_shop": "Explorar tienda",
     "cta_experiences": "Nuestras experiencias"
   },
   "mission": {
     "title": "Quiénes somos",
-    "text": "The Cupping Farmer nació del amor por la tierra y la obsesión por la calidad. Somos agricultores, catadores y apasionados del café de especialidad. Cada grano cuenta una historia: la de la finca, la de la cosecha, la de las manos que lo cuidan.",
+    "text": "The Cupping Farmer nació en los cafetales de Copán Ruinas, Honduras. Crecí entre cosechas y cupping al amanecer; hoy desde Hamburgo comparto esa pasión seleccionando microlotes de origen con ojo de agricultor.",
     "values": [
       { "icon": "leaf", "title": "Origen trazable", "text": "Conocemos cada lote desde la semilla hasta el empaque." },
       { "icon": "cup", "title": "Calidad sensorial", "text": "Cupping riguroso en cada proceso para garantizar perfiles únicos." },
-      { "icon": "heart", "title": "Comunidad cafetera", "text": "Trabajamos de la mano con agricultores locales y sostenibles." }
+      { "icon": "heart", "title": "Comunidad cafetera", "text": "Colaboramos directamente con pequeños productores de Honduras, Colombia y otros orígenes." }
     ]
   },
   "featured": {
@@ -32,7 +32,7 @@
   "experiences_teaser": {
     "title": "Vive el café",
     "subtitle": "Más allá de la taza",
-    "text": "Catas guiadas, talleres de barismo y tours de finca. Sumérgete en el mundo del café de especialidad.",
+    "text": "Catas guiadas, talleres de barismo y eventos de café. Sumérgete en el mundo del café de especialidad.",
     "cta": "Ver experiencias"
   },
   "social": {
@@ -41,7 +41,7 @@
   },
   "shop": {
     "title": "Tienda",
-    "subtitle": "Café de especialidad directo del productor",
+    "subtitle": "Café de especialidad de múltiples orígenes",
     "add_to_cart": "Agregar al carrito",
     "view_details": "Ver detalles",
     "origin": "Origen",
@@ -69,9 +69,9 @@
   },
   "about": {
     "title": "Nuestra historia",
-    "subtitle": "De la finca al mundo",
+    "subtitle": "De Copán Ruinas al mundo",
     "story_title": "El origen de The Cupping Farmer",
-    "story": "Todo comenzó con una pregunta simple: ¿por qué el mejor café del mundo viene de nuestras tierras, pero nunca llega a nuestras mesas en su mejor versión?\n\nThe Cupping Farmer nació para cerrar esa brecha. Somos agricultores que aprendimos a catar, catadores que volvimos al campo. Combinamos el conocimiento técnico del café de especialidad con la experiencia real de cultivar la tierra.\n\nHoy trabajamos con fincas seleccionadas, procesamos con rigor y compartimos el resultado con personas que aman el café tanto como nosotros.",
+    "story": "Todo comenzó en los cafetales de Copán Ruinas, Honduras — una de las regiones cafeteras más auténticas de Centroamérica. Crecí entre fincas y cosechas, aprendiendo que la calidad nace mucho antes de llegar a la taza.\n\nThe Cupping Farmer nació de esa experiencia de campo combinada con el rigor del cupping profesional. Hoy, desde Hamburgo (Alemania), seleccionamos microlotes de origen de Honduras, Colombia y otros países cafeteros, con la mirada de quien conoce el café desde la raíz.\n\nCada bolsa cuenta la historia de una finca, un proceso y unas manos que cuidan el grano con dedicación. Eso es lo que compartimos contigo.",
     "team_title": "El equipo",
     "values_title": "Nuestros valores"
   },

@@ -30,7 +30,7 @@ const valuesData = {
   es: [
     { title: "Sostenibilidad", text: "Prácticas agrícolas regenerativas que cuidan el suelo y el entorno." },
     { title: "Calidad sin concesiones", text: "Cada lote pasa por cupping riguroso antes de llegar a ti." },
-    { title: "Comunidad", text: "Apoyamos a las familias cafeteras de nuestras fincas aliadas." },
+    { title: "Comunidad", text: "Colaboramos directamente con productores de Honduras, Colombia y otros orígenes." },
     { title: "Origen trazable", text: "Sabemos exactamente de dónde viene cada grano." },
     { title: "Artesanía", text: "Procesamos con cuidado artesanal, sin atajos." },
     { title: "Pasión", text: "El café no es solo nuestro negocio, es nuestra vida." },
@@ -38,7 +38,7 @@ const valuesData = {
   en: [
     { title: "Sustainability", text: "Regenerative farming practices that care for the soil and the environment." },
     { title: "Uncompromising quality", text: "Every lot undergoes rigorous cupping before reaching you." },
-    { title: "Community", text: "We support the farming families at our partner farms." },
+    { title: "Community", text: "We work directly with producers from Honduras, Colombia and other origins." },
     { title: "Traceable origin", text: "We know exactly where every bean comes from." },
     { title: "Craftsmanship", text: "We process with artisanal care, without shortcuts." },
     { title: "Passion", text: "Coffee is not just our business, it's our life." },

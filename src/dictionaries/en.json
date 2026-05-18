@@ -11,17 +11,17 @@
   "hero": {
     "tagline": "From farm to your cup",
     "headline": "Specialty coffee with a farmer's soul",
-    "subheadline": "We grow, process and share the finest single-origin coffee, with the passion of those who know every tree by name.",
+    "subheadline": "Raised among coffee fields in Copán Ruinas (Honduras) and now based in Hamburg, we select the finest specialty micro-lots from around the world.",
     "cta_shop": "Explore the shop",
     "cta_experiences": "Our experiences"
   },
   "mission": {
     "title": "Who we are",
-    "text": "The Cupping Farmer was born from a love of the land and an obsession with quality. We are farmers, cuppers and specialty coffee enthusiasts. Every bean tells a story: the farm, the harvest, the hands that nurture it.",
+    "text": "The Cupping Farmer was born in the coffee fields of Copán Ruinas, Honduras. I grew up among harvests and early-morning cuppings; today from Hamburg I share that passion by selecting origin micro-lots with a farmer's eye.",
     "values": [
       { "icon": "leaf", "title": "Traceable origin", "text": "We know every lot from seed to packaging." },
       { "icon": "cup", "title": "Sensory quality", "text": "Rigorous cupping at every stage to ensure unique flavor profiles." },
-      { "icon": "heart", "title": "Coffee community", "text": "We work hand in hand with local and sustainable farmers." }
+      { "icon": "heart", "title": "Coffee community", "text": "We work directly with small producers from Honduras, Colombia and other origins." }
     ]
   },
   "featured": {
@@ -32,7 +32,7 @@
   "experiences_teaser": {
     "title": "Live the coffee",
     "subtitle": "Beyond the cup",
-    "text": "Guided cuppings, barista workshops and farm tours. Immerse yourself in the world of specialty coffee.",
+    "text": "Guided cuppings, barista workshops and coffee events. Immerse yourself in the world of specialty coffee.",
     "cta": "View experiences"
   },
   "social": {
@@ -41,7 +41,7 @@
   },
   "shop": {
     "title": "Shop",
-    "subtitle": "Specialty coffee direct from the producer",
+    "subtitle": "Specialty coffee from multiple origins",
     "add_to_cart": "Add to cart",
     "view_details": "View details",
     "origin": "Origin",
@@ -69,9 +69,9 @@
   },
   "about": {
     "title": "Our story",
-    "subtitle": "From the farm to the world",
+    "subtitle": "From Copán Ruinas to the world",
     "story_title": "The origin of The Cupping Farmer",
-    "story": "It all started with a simple question: why does the world's best coffee come from our lands, but never reaches our tables in its finest form?\n\nThe Cupping Farmer was born to bridge that gap. We are farmers who learned to cup, cuppers who returned to the land. We combine the technical knowledge of specialty coffee with the real experience of working the soil.\n\nToday we work with selected farms, process with rigor and share the result with people who love coffee as much as we do.",
+    "story": "It all started in the coffee fields of Copán Ruinas, Honduras — one of the most authentic coffee-growing regions in Central America. I grew up among farms and harvests, learning that quality is born long before it reaches the cup.\n\nThe Cupping Farmer grew from that field experience combined with the rigor of professional cupping. Today, from Hamburg (Germany), I select origin micro-lots from Honduras, Colombia and other coffee-producing countries, with the eye of someone who knows coffee from the root up.\n\nEach bag tells the story of a farm, a process and hands that care for the bean with dedication. That is what I share with you.",
     "team_title": "The team",
     "values_title": "Our values"
   },
