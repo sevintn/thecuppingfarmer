@@ -60,14 +60,21 @@ export default function Footer({ lang, dict }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
           {/* Brand */}
           <div className="space-y-4">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/logo-full.svg`}
-              alt="The Cupping Farmer"
-              width={160}
-              height={160}
-              className="brightness-0 invert"
-            />
+            <div className="flex items-center gap-3">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/logo-mark.svg`}
+                alt="The Cupping Farmer"
+                width={56}
+                height={56}
+                className="flex-shrink-0 brightness-0 invert"
+              />
+              <span className="font-heading font-bold text-brand-cream text-lg leading-tight">
+                The Cupping
+                <br />
+                <span className="text-brand-beige/80">Farmer</span>
+              </span>
+            </div>
             <p className="text-brand-beige/70 text-sm font-body leading-relaxed">
               {dict.footer.tagline}
             </p>
