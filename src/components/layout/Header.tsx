@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { ShoppingBag, Menu, X } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 
@@ -23,7 +24,9 @@ interface HeaderProps {
 export default function Header({ lang, dict }: HeaderProps) {
   const { itemCount, openCart } = useCart();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
   const otherLang = lang === "es" ? "en" : "es";
+  const otherLangPath = pathname.replace(`/${lang}`, `/${otherLang}`);
 
   const navLinks = [
     { href: `/${lang}`, label: dict.nav.home },
@@ -73,7 +76,7 @@ export default function Header({ lang, dict }: HeaderProps) {
           <div className="flex items-center gap-3">
             {/* Language switcher */}
             <Link
-              href={`/${otherLang}`}
+              href={otherLangPath}
               className="hidden sm:block text-xs font-body uppercase tracking-widest text-brand-mid hover:text-brand-dark border border-brand-mid px-2.5 py-1 transition-colors duration-150"
             >
               {otherLang}
@@ -124,7 +127,7 @@ export default function Header({ lang, dict }: HeaderProps) {
               </Link>
             ))}
             <Link
-              href={`/${otherLang}`}
+              href={otherLangPath}
               onClick={() => setMobileOpen(false)}
               className="py-2.5 text-sm font-body text-brand-mid uppercase tracking-widest"
             >
