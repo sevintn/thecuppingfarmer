@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { InstagramIcon, YoutubeIcon, FacebookIcon, TiktokIcon } from "@/components/ui/SocialIcons";
 
 interface FooterProps {
@@ -61,8 +60,9 @@ export default function Footer({ lang, dict }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
           {/* Brand */}
           <div className="space-y-4">
-            <Image
-              src="/logo-full.svg"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/logo-full.svg`}
               alt="The Cupping Farmer"
               width={160}
               height={160}
