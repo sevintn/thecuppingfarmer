@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "experiences": "Experiences",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "cart": "Cart"
+  },
+  "hero": {
+    "tagline": "From farm to your cup",
+    "headline": "Specialty coffee with a farmer's soul",
+    "subheadline": "We grow, process and share the finest single-origin coffee, with the passion of those who know every tree by name.",
+    "cta_shop": "Explore the shop",
+    "cta_experiences": "Our experiences"
+  },
+  "mission": {
+    "title": "Who we are",
+    "text": "The Cupping Farmer was born from a love of the land and an obsession with quality. We are farmers, cuppers and specialty coffee enthusiasts. Every bean tells a story: the farm, the harvest, the hands that nurture it.",
+    "values": [
+      { "icon": "leaf", "title": "Traceable origin", "text": "We know every lot from seed to packaging." },
+      { "icon": "cup", "title": "Sensory quality", "text": "Rigorous cupping at every stage to ensure unique flavor profiles." },
+      { "icon": "heart", "title": "Coffee community", "text": "We work hand in hand with local and sustainable farmers." }
+    ]
+  },
+  "featured": {
+    "title": "Our coffees",
+    "subtitle": "Micro-lot selection with unique flavor profiles",
+    "view_all": "View all coffees"
+  },
+  "experiences_teaser": {
+    "title": "Live the coffee",
+    "subtitle": "Beyond the cup",
+    "text": "Guided cuppings, barista workshops and farm tours. Immerse yourself in the world of specialty coffee.",
+    "cta": "View experiences"
+  },
+  "social": {
+    "title": "Follow us",
+    "subtitle": "Share the coffee experience with us"
+  },
+  "shop": {
+    "title": "Shop",
+    "subtitle": "Specialty coffee direct from the producer",
+    "add_to_cart": "Add to cart",
+    "view_details": "View details",
+    "origin": "Origin",
+    "process": "Process",
+    "roast": "Roast",
+    "weight": "Weight",
+    "flavor_notes": "Flavor notes",
+    "in_stock": "In stock",
+    "out_of_stock": "Out of stock",
+    "added": "Added!",
+    "checkout": "Go to checkout",
+    "empty_cart": "Your cart is empty",
+    "cart_title": "My cart",
+    "subtotal": "Subtotal",
+    "quantity": "Quantity"
+  },
+  "experiences": {
+    "title": "Experiences",
+    "subtitle": "Live coffee from the inside",
+    "duration": "Duration",
+    "capacity": "Capacity",
+    "price_from": "From",
+    "book_now": "Book now",
+    "contact_us": "Contact us to book"
+  },
+  "about": {
+    "title": "Our story",
+    "subtitle": "From the farm to the world",
+    "story_title": "The origin of The Cupping Farmer",
+    "story": "It all started with a simple question: why does the world's best coffee come from our lands, but never reaches our tables in its finest form?\n\nThe Cupping Farmer was born to bridge that gap. We are farmers who learned to cup, cuppers who returned to the land. We combine the technical knowledge of specialty coffee with the real experience of working the soil.\n\nToday we work with selected farms, process with rigor and share the result with people who love coffee as much as we do.",
+    "team_title": "The team",
+    "values_title": "Our values"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Knowledge about specialty coffee",
+    "read_more": "Read more",
+    "back_to_blog": "Back to blog",
+    "published": "Published"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We're here to help",
+    "name": "Name",
+    "email": "Email address",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send message",
+    "success": "Message sent! We'll get back to you soon.",
+    "follow_us": "Follow us",
+    "info_title": "Contact information"
+  },
+  "footer": {
+    "tagline": "From farm to your cup",
+    "links_title": "Navigation",
+    "social_title": "Social media",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "not_found": "Not found",
+    "back": "Back",
+    "currency": "USD"
+  }
+}

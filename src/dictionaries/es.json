@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "shop": "Tienda",
+    "experiences": "Experiencias",
+    "about": "Nosotros",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "cart": "Carrito"
+  },
+  "hero": {
+    "tagline": "Del campo a tu taza",
+    "headline": "Café de especialidad con alma de agricultor",
+    "subheadline": "Cultivamos, procesamos y compartimos el mejor café de origen, con la pasión de quienes conocen cada árbol por nombre.",
+    "cta_shop": "Explorar tienda",
+    "cta_experiences": "Nuestras experiencias"
+  },
+  "mission": {
+    "title": "Quiénes somos",
+    "text": "The Cupping Farmer nació del amor por la tierra y la obsesión por la calidad. Somos agricultores, catadores y apasionados del café de especialidad. Cada grano cuenta una historia: la de la finca, la de la cosecha, la de las manos que lo cuidan.",
+    "values": [
+      { "icon": "leaf", "title": "Origen trazable", "text": "Conocemos cada lote desde la semilla hasta el empaque." },
+      { "icon": "cup", "title": "Calidad sensorial", "text": "Cupping riguroso en cada proceso para garantizar perfiles únicos." },
+      { "icon": "heart", "title": "Comunidad cafetera", "text": "Trabajamos de la mano con agricultores locales y sostenibles." }
+    ]
+  },
+  "featured": {
+    "title": "Nuestros cafés",
+    "subtitle": "Selección de microlotes con perfiles únicos",
+    "view_all": "Ver toda la tienda"
+  },
+  "experiences_teaser": {
+    "title": "Vive el café",
+    "subtitle": "Más allá de la taza",
+    "text": "Catas guiadas, talleres de barismo y tours de finca. Sumérgete en el mundo del café de especialidad.",
+    "cta": "Ver experiencias"
+  },
+  "social": {
+    "title": "Síguenos",
+    "subtitle": "Comparte el café con nosotros"
+  },
+  "shop": {
+    "title": "Tienda",
+    "subtitle": "Café de especialidad directo del productor",
+    "add_to_cart": "Agregar al carrito",
+    "view_details": "Ver detalles",
+    "origin": "Origen",
+    "process": "Proceso",
+    "roast": "Tueste",
+    "weight": "Peso",
+    "flavor_notes": "Notas de sabor",
+    "in_stock": "Disponible",
+    "out_of_stock": "Agotado",
+    "added": "¡Agregado!",
+    "checkout": "Ir al checkout",
+    "empty_cart": "Tu carrito está vacío",
+    "cart_title": "Mi carrito",
+    "subtotal": "Subtotal",
+    "quantity": "Cantidad"
+  },
+  "experiences": {
+    "title": "Experiencias",
+    "subtitle": "Vive el café desde adentro",
+    "duration": "Duración",
+    "capacity": "Capacidad",
+    "price_from": "Desde",
+    "book_now": "Reservar ahora",
+    "contact_us": "Contáctanos para reservar"
+  },
+  "about": {
+    "title": "Nuestra historia",
+    "subtitle": "De la finca al mundo",
+    "story_title": "El origen de The Cupping Farmer",
+    "story": "Todo comenzó con una pregunta simple: ¿por qué el mejor café del mundo viene de nuestras tierras, pero nunca llega a nuestras mesas en su mejor versión?\n\nThe Cupping Farmer nació para cerrar esa brecha. Somos agricultores que aprendimos a catar, catadores que volvimos al campo. Combinamos el conocimiento técnico del café de especialidad con la experiencia real de cultivar la tierra.\n\nHoy trabajamos con fincas seleccionadas, procesamos con rigor y compartimos el resultado con personas que aman el café tanto como nosotros.",
+    "team_title": "El equipo",
+    "values_title": "Nuestros valores"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Conocimiento sobre café de especialidad",
+    "read_more": "Leer más",
+    "back_to_blog": "Volver al blog",
+    "published": "Publicado"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Estamos aquí para ayudarte",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "success": "¡Mensaje enviado! Te responderemos pronto.",
+    "follow_us": "Síguenos en redes",
+    "info_title": "Información de contacto"
+  },
+  "footer": {
+    "tagline": "Del campo a tu taza",
+    "links_title": "Navegación",
+    "social_title": "Redes sociales",
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "not_found": "No encontrado",
+    "back": "Volver",
+    "currency": "USD"
+  }
+}
