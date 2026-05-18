@@ -25,7 +25,7 @@ export default function ExperiencesTeaser({
         className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1400&q=80')",
+            "url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1200&q=75')",
         }}
         aria-hidden="true"
       />

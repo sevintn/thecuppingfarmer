@@ -20,7 +20,7 @@ export default function MissionBlock({ dict }: MissionBlockProps) {
   return (
     <section className="py-20 lg:py-28 bg-brand-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 lg:gap-20 items-center">
           {/* Text */}
           <div>
             <p className="font-body text-brand-mid text-xs uppercase tracking-[0.25em] mb-3">

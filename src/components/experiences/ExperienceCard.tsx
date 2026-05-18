@@ -69,7 +69,7 @@ export default function ExperienceCard({
         </div>
 
         {/* Price + CTA */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <p className="font-body text-brand-mid text-xs mb-0.5">
               {dict.price_from}

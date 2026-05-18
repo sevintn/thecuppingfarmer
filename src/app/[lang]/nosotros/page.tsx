@@ -66,7 +66,7 @@ export default async function NosotrosPage({
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1498804103079-a6351b050096?w=1400&q=80')",
+              "url('https://images.unsplash.com/photo-1498804103079-a6351b050096?w=1200&q=75')",
           }}
           aria-hidden="true"
         />
@@ -147,7 +147,7 @@ export default async function NosotrosPage({
       </section>
 
       {/* Image strip */}
-      <section className="grid grid-cols-3 h-48 sm:h-64 lg:h-80">
+      <section className="grid grid-cols-1 sm:grid-cols-3 h-48 sm:h-64 lg:h-80">
         {[
           "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80",
           "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80",

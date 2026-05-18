@@ -22,7 +22,7 @@ export default function Hero({ lang, dict }: HeroProps) {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-35"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=1600&q=80')",
+            "url('https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=1200&q=75')",
         }}
         aria-hidden="true"
       />

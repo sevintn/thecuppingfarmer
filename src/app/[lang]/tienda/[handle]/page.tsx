@@ -109,7 +109,7 @@ export default async function ProductPage({
             </p>
 
             {/* Specs grid */}
-            <div className="grid grid-cols-2 gap-4 mb-6 bg-brand-beige/50 p-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 bg-brand-beige/50 p-5">
               {[
                 { label: dict.shop.origin, value: product.origin },
                 { label: dict.shop.process, value: product.process },
@@ -146,7 +146,7 @@ export default async function ProductPage({
 
             {/* Price */}
             <div className="flex items-baseline gap-3 mb-6">
-              <p className="font-heading font-bold text-brand-dark text-4xl">
+              <p className="font-heading font-bold text-brand-dark text-3xl sm:text-4xl">
                 {new Intl.NumberFormat(lang === "es" ? "es-CO" : "en-US", {
                   style: "currency",
                   currency: product.currencyCode,
