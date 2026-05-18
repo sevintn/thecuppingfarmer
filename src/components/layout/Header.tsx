@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { ShoppingBag, Menu, X } from "lucide-react";
@@ -47,11 +48,14 @@ export default function Header({ lang, dict }: HeaderProps) {
             className="flex items-center gap-2 group"
             aria-label="The Cupping Farmer — Inicio"
           >
-            <div className="w-9 h-9 bg-brand-dark rounded-full flex items-center justify-center flex-shrink-0">
-              <span className="text-brand-cream text-sm font-heading font-bold">
-                CF
-              </span>
-            </div>
+            <Image
+              src="/logo-mark.svg"
+              alt="The Cupping Farmer"
+              width={40}
+              height={40}
+              className="flex-shrink-0"
+              priority
+            />
             <span className="font-heading font-bold text-brand-dark text-lg leading-tight hidden sm:block">
               The Cupping
               <br />

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { InstagramIcon, YoutubeIcon, FacebookIcon, TiktokIcon } from "@/components/ui/SocialIcons";
 
 interface FooterProps {
@@ -60,18 +61,13 @@ export default function Footer({ lang, dict }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-9 h-9 bg-brand-beige rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-brand-dark text-sm font-heading font-bold">
-                  CF
-                </span>
-              </div>
-              <span className="font-heading font-bold text-brand-cream text-lg leading-tight">
-                The Cupping
-                <br />
-                <span className="text-brand-beige/80">Farmer</span>
-              </span>
-            </div>
+            <Image
+              src="/logo-full.svg"
+              alt="The Cupping Farmer"
+              width={160}
+              height={160}
+              className="invert brightness-90"
+            />
             <p className="text-brand-beige/70 text-sm font-body leading-relaxed">
               {dict.footer.tagline}
             </p>
