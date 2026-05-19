@@ -57,7 +57,7 @@ export default function ContactPageClient({ lang, dict }: ContactPageClientProps
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoUrl = `mailto:info@thecuppingfarmer.com?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(
+    const mailtoUrl = `mailto:juan@thecuppingfarmer.com?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(
       `${dict.contact.name}: ${form.name}\n${dict.contact.email}: ${form.email}\n\n${form.message}`
     )}`;
     window.location.href = mailtoUrl;
@@ -184,7 +184,7 @@ export default function ContactPageClient({ lang, dict }: ContactPageClientProps
                 <div className="flex items-start gap-3 text-brand-mid">
                   <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
                   <p className="font-body text-sm">
-                    info@thecuppingfarmer.com
+                    juan@thecuppingfarmer.com
                   </p>
                 </div>
                 <div className="flex items-start gap-3 text-brand-mid mt-3">

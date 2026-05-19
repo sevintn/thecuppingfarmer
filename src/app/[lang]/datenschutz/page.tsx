@@ -52,10 +52,10 @@ export default async function DatenschutzPage({
             <br />
             E-Mail:{" "}
             <a
-              href="mailto:info@thecuppingfarmer.com"
+              href="mailto:juan@thecuppingfarmer.com"
               className="underline hover:text-brand-dark transition-colors"
             >
-              info@thecuppingfarmer.com
+              juan@thecuppingfarmer.com
             </a>
           </address>
         </div>
@@ -174,10 +174,10 @@ export default async function DatenschutzPage({
           <p className="text-brand-mid leading-relaxed mt-3">
             Zur Ausübung Ihrer Rechte wenden Sie sich bitte an:{" "}
             <a
-              href="mailto:info@thecuppingfarmer.com"
+              href="mailto:juan@thecuppingfarmer.com"
               className="underline hover:text-brand-dark transition-colors"
             >
-              info@thecuppingfarmer.com
+              juan@thecuppingfarmer.com
             </a>
           </p>
         </div>

@@ -59,10 +59,10 @@ export default async function ImpressumPage({
           <p className="text-brand-mid">
             E-Mail:{" "}
             <a
-              href="mailto:info@thecuppingfarmer.com"
+              href="mailto:juan@thecuppingfarmer.com"
               className="underline hover:text-brand-dark transition-colors"
             >
-              info@thecuppingfarmer.com
+              juan@thecuppingfarmer.com
             </a>
           </p>
         </div>
