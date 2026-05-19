@@ -9,19 +9,19 @@
     "cart": "Cart"
   },
   "hero": {
-    "tagline": "From farm to your cup",
-    "headline": "Specialty coffee with a farmer's soul",
-    "subheadline": "Raised among coffee fields in Copán Ruinas (Honduras) and now based in Hamburg, we select the finest specialty micro-lots from around the world.",
+    "tagline": "From Copán's fields to the European shelf",
+    "headline": "Your cup has things to tell you.",
+    "subheadline": "I'm Juan Welchez — agronomist, Q Grader and Honduran coffee farmer. I grew up among harvests in Copán Ruinas. Today from Hamburg I source specialty coffee for Europe and teach you what most people drink without ever knowing.",
     "cta_shop": "Explore the shop",
-    "cta_experiences": "Our experiences"
+    "cta_experiences": "View experiences"
   },
   "mission": {
-    "title": "Who we are",
-    "text": "The Cupping Farmer was born in the coffee fields of Copán Ruinas, Honduras. I grew up among harvests and early-morning cuppings; today from Hamburg I share that passion by selecting origin micro-lots with a farmer's eye.",
+    "title": "Who's behind the cup",
+    "text": "The Cupping Farmer is me: Juan Ángel Welchez. Agronomist from Zamorano, grandson of coffee farmers, and the Honduran who now sources micro-lots from over 60 origins for the European market.\n\nI'm not here to sell you coffee. I'm here to explain what's inside it — because I've seen it from the seed up. From the family farm in Copán Ruinas to the cupping tables in Hamburg, coffee has always been the language I use to understand the world.\nThis is what I know. No filter.",
     "values": [
-      { "icon": "leaf", "title": "Traceable origin", "text": "We know every lot from seed to packaging." },
-      { "icon": "cup", "title": "Sensory quality", "text": "Rigorous cupping at every stage to ensure unique flavor profiles." },
-      { "icon": "heart", "title": "Coffee community", "text": "We work directly with small producers from Honduras, Colombia and other origins." }
+      { "icon": "leaf", "title": "Traceable origin", "text": "Every lot I select has a defined country, region and process. No empty labels. Traceability isn't marketing — it's the minimum of respect for the farmer who grew it and for you who drinks it." },
+      { "icon": "cup", "title": "Sensory authority", "text": "Certified Q Grader with over a decade of cupping in the field and at commercial tables. What I tell you about a cup, I can back up from the plant to the extraction." },
+      { "icon": "heart", "title": "Real community", "text": "I work directly with small producers from Honduras, Colombia and other origins. Buying here isn't just coffee — it's closing the circle of the supply chain." }
     ]
   },
   "featured": {
@@ -30,14 +30,14 @@
     "view_all": "View all coffees"
   },
   "experiences_teaser": {
-    "title": "Live the coffee",
+    "title": "Coffee makes more sense when you taste it",
     "subtitle": "Beyond the cup",
-    "text": "Guided cuppings, barista workshops and coffee events. Immerse yourself in the world of specialty coffee.",
+    "text": "Guided cuppings, origin workshops and sensory experiences so you stop drinking coffee on autopilot and start drinking it for real. With me as your guide — not as a professor, but as the friend who's already walked the path and wants to show you what he found.",
     "cta": "View experiences"
   },
   "social": {
-    "title": "Follow us",
-    "subtitle": "Share the coffee experience with us"
+    "title": "Unfiltered coffee, every day",
+    "subtitle": "On Instagram and TikTok I share what your cup of coffee is hiding from you. Technique, origin, real discoveries — no corporate script."
   },
   "shop": {
     "title": "Shop",
@@ -95,10 +95,12 @@
     "info_title": "Contact information"
   },
   "footer": {
-    "tagline": "From farm to your cup",
+    "tagline": "What your cup is hiding from you",
     "links_title": "Navigation",
     "social_title": "Social media",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "legal_notice": "Legal notice",
+    "privacy_policy": "Privacy policy"
   },
   "common": {
     "loading": "Loading...",

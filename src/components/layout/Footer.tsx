@@ -17,6 +17,8 @@ interface FooterProps {
       links_title: string;
       social_title: string;
       rights: string;
+      legal_notice: string;
+      privacy_policy: string;
     };
   };
 }
@@ -119,7 +121,19 @@ export default function Footer({ lang, dict }: FooterProps) {
             © {new Date().getFullYear()} The Cupping Farmer.{" "}
             {dict.footer.rights}
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-wrap justify-center">
+            <Link
+              href={`/${lang}/impressum`}
+              className="text-brand-beige/50 hover:text-brand-cream text-xs font-body transition-colors"
+            >
+              {dict.footer.legal_notice}
+            </Link>
+            <Link
+              href={`/${lang}/datenschutz`}
+              className="text-brand-beige/50 hover:text-brand-cream text-xs font-body transition-colors"
+            >
+              {dict.footer.privacy_policy}
+            </Link>
             <Link
               href="/es"
               className="text-brand-beige/50 hover:text-brand-cream text-xs font-body transition-colors"

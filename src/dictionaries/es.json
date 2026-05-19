@@ -98,7 +98,9 @@
     "tagline": "Lo que tu taza te está escondiendo",
     "links_title": "Navegación",
     "social_title": "Redes sociales",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "legal_notice": "Aviso legal",
+    "privacy_policy": "Privacidad"
   },
   "common": {
     "loading": "Cargando...",
