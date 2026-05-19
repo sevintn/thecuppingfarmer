@@ -40,7 +40,7 @@ export default function Header({ lang, dict }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 bg-brand-cream/95 backdrop-blur border-b border-brand-beige">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link
             href={`/${lang}`}
@@ -51,8 +51,8 @@ export default function Header({ lang, dict }: HeaderProps) {
             <img
               src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/logo-mark.svg`}
               alt="The Cupping Farmer"
-              width={48}
-              height={48}
+              width={64}
+              height={64}
               className="flex-shrink-0"
             />
             <span className="font-heading font-bold text-brand-dark text-lg leading-tight hidden sm:block">
