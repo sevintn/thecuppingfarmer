@@ -53,9 +53,8 @@ export default function Hero({ lang, dict }: HeroProps) {
             </Link>
             <Link href={`/${lang}/experiencias`}>
               <Button
-                variant="outline"
+                variant="secondary"
                 size="lg"
-                className="border-brand-cream text-brand-cream hover:bg-brand-cream hover:text-brand-dark"
               >
                 {dict.hero.cta_experiences}
               </Button>
