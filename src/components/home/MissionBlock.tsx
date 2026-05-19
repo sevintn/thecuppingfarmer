@@ -26,9 +26,16 @@ export default function MissionBlock({ dict }: MissionBlockProps) {
             <p className="font-body text-brand-mid text-xs uppercase tracking-[0.25em] mb-3">
               {dict.mission.title}
             </p>
-            <p className="font-body text-brand-dark text-lg leading-relaxed">
-              {dict.mission.text}
-            </p>
+            <div className="space-y-4">
+              {dict.mission.text.split("\n\n").map((para, i) => (
+                <p
+                  key={i}
+                  className="font-body text-brand-dark text-lg leading-relaxed whitespace-pre-line"
+                >
+                  {para}
+                </p>
+              ))}
+            </div>
           </div>
 
           {/* Values */}

@@ -15,15 +15,19 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang } = await params;
+  const title =
+    lang === "es"
+      ? "The Cupping Farmer — Lo que tu taza de café te está escondiendo"
+      : "The Cupping Farmer — Specialty Coffee";
+  const description =
+    lang === "es"
+      ? "Soy Juan Welchez, agrónomo hondureño y catador desde Hamburgo. Aquí te enseño lo que el café de especialidad esconde — desde la finca hasta tu taza."
+      : "We grow, process and share the finest single-origin coffee. Online shop, cuppings and coffee experiences.";
   return {
-    title:
-      lang === "es"
-        ? "The Cupping Farmer — Café de especialidad"
-        : "The Cupping Farmer — Specialty Coffee",
-    description:
-      lang === "es"
-        ? "Cultivamos, procesamos y compartimos el mejor café de origen. Tienda online, catas y experiencias cafeteras."
-        : "We grow, process and share the finest single-origin coffee. Online shop, cuppings and coffee experiences.",
+    title,
+    description,
+    openGraph: { title, description },
+    twitter: { description },
   };
 }
 

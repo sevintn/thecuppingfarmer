@@ -9,19 +9,19 @@
     "cart": "Carrito"
   },
   "hero": {
-    "tagline": "Del campo a tu taza",
-    "headline": "Café de especialidad con alma de agricultor",
-    "subheadline": "Criado entre cafetales en Copán Ruinas (Honduras) y hoy desde Hamburgo, seleccionamos los mejores microlotes de especialidad del mundo.",
+    "tagline": "Del cafetal de Copán al shelf europeo",
+    "headline": "Tu taza tiene cosas que decirte.",
+    "subheadline": "Soy Juan Welchez — agrónomo, Q Grader y caficultor hondureño. Crecí entre cosechas en Copán Ruinas. Hoy desde Hamburgo selecciono café de especialidad para Europa y te enseño lo que la mayoría consume sin saber.",
     "cta_shop": "Explorar tienda",
-    "cta_experiences": "Nuestras experiencias"
+    "cta_experiences": "Ver experiencias"
   },
   "mission": {
-    "title": "Quiénes somos",
-    "text": "The Cupping Farmer nació en los cafetales de Copán Ruinas, Honduras. Crecí entre cosechas y cupping al amanecer; hoy desde Hamburgo comparto esa pasión seleccionando microlotes de origen con ojo de agricultor.",
+    "title": "Quién está detrás de la taza",
+    "text": "The Cupping Farmer soy yo: Juan Ángel Welchez. Ingeniero agrónomo egresado de Zamorano, nieto de caficultores, y el hondureño que hoy selecciona microlotes de más de 60 orígenes para el mercado europeo.\n\nNo soy el que te vende café. Soy el que te explica lo que hay adentro — porque lo vi desde la semilla. Desde la finca familiar en Copán Ruinas hasta las mesas de cupping en Hamburgo, el café siempre fue el idioma con el que entendí el mundo.\nAquí comparto lo que sé. Sin filtro.",
     "values": [
-      { "icon": "leaf", "title": "Origen trazable", "text": "Conocemos cada lote desde la semilla hasta el empaque." },
-      { "icon": "cup", "title": "Calidad sensorial", "text": "Cupping riguroso en cada proceso para garantizar perfiles únicos." },
-      { "icon": "heart", "title": "Comunidad cafetera", "text": "Colaboramos directamente con pequeños productores de Honduras, Colombia y otros orígenes." }
+      { "icon": "leaf", "title": "Origen trazable", "text": "Cada lote que selecciono tiene país, región y proceso definido. Sin etiquetas vacías. La trazabilidad no es marketing — es el mínimo de respeto hacia quien lo cultivó y hacia vos que lo tomás." },
+      { "icon": "cup", "title": "Autoridad sensorial", "text": "Q Grader certificado con más de una década catando café en campo y en mesa comercial. Lo que te digo sobre una taza, lo puedo defender desde la planta hasta la extracción." },
+      { "icon": "heart", "title": "Comunidad real", "text": "Trabajo directamente con pequeños productores de Honduras, Colombia y otros orígenes. Comprar aquí no es solo café — es cerrar el círculo de la cadena." }
     ]
   },
   "featured": {
@@ -30,14 +30,14 @@
     "view_all": "Ver toda la tienda"
   },
   "experiences_teaser": {
-    "title": "Vive el café",
+    "title": "El café se entiende mejor cuando se cata",
     "subtitle": "Más allá de la taza",
-    "text": "Catas guiadas, talleres de barismo y eventos de café. Sumérgete en el mundo del café de especialidad.",
+    "text": "Catas guiadas, talleres de origen y experiencias sensoriales para que dejes de tomar café de memoria y empieces a tomarlo de verdad. Con yo como guía — no como profesor, sino como el amigo que ya recorrió el camino y quiere mostrarte lo que vio.",
     "cta": "Ver experiencias"
   },
   "social": {
-    "title": "Síguenos",
-    "subtitle": "Comparte el café con nosotros"
+    "title": "Café sin filtro, todos los días",
+    "subtitle": "En Instagram y TikTok comparto lo que la taza de tu café te está escondiendo. Técnica, origen, descubrimientos reales — sin guion corporativo."
   },
   "shop": {
     "title": "Tienda",
@@ -95,7 +95,7 @@
     "info_title": "Información de contacto"
   },
   "footer": {
-    "tagline": "Del campo a tu taza",
+    "tagline": "Lo que tu taza te está escondiendo",
     "links_title": "Navegación",
     "social_title": "Redes sociales",
     "rights": "Todos los derechos reservados."
