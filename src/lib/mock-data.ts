@@ -58,7 +58,7 @@ export const mockProducts: MockProduct[] = [
     price: 28.0,
     currencyCode: "USD",
     image:
-      "https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=800&q=80",
+      `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hero.jpg`,
     tags: ["specialty", "geisha", "natural", "featured"],
     origin: "Colombia",
     process: "Natural",
